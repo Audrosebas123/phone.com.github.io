@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Vinculación de hojas de estilo y scripts externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Título de la página -->
+    <title>Phone.com | </title>
+</head>
+<body>
+    <!-- Encabezado con fondo de imagen -->
+    <div>
+        <div>
+            <header class="diseño" style="background: url(img/contacto.png);">
+                <div class="header-content">
+                    <!-- Logotipo de la página -->
+                    <div class="logo">
+                        <img src="LOGOWHITE.png" alt="Logo de Mi Página Web">
+                    </div>
+                    <!-- Menú de navegación -->
+                    <nav class="nave">
+                        <ul>
+                            <li><a href="file:///c%3A/Users/Estudiantes/Desktop/proyecto_final/index.html#">Inicio</a></li>
+                            <li><a href="file:///c%3A/Users/Estudiantes/Desktop/proyecto_final/servicios.html">Servicios</a></li>
+                            <li><a href="file:///c%3A/Users/Estudiantes/Desktop/proyecto_final/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <!-- Sección de contacto -->
+        <div class="container mt-4">
+            <section id="contacto" style="text-align: center;">
+                <h2>Contacto</h2>
+            </section>
+        </div>
+
+        <!-- Sección de imagen -->
+        <section style="text-align: center;align-items: center;">
+            <img src="img/tabletas.png">
+        </section>
+
+        <!-- Sección de información de ubicación y formulario de contacto -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Ubicación </h3>
+                <p>Dirección: Apple Center Santa Cruz, Ciudad, Santa Cruz</p>
+                
+                <!-- Mapa de Google -->
+                <div class="embed-responsive embed-responsive-16by9" style="text-align: center;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30391.82014247748!2d-63.22579756523437!3d-17.792753699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1c31b5e05456f%3A0x2383092b24f2d4cd!2sApple%20Center%20Santa%20Cruz!5e0!3m2!1sen!2sbo!4v1701474532162!5m2!1sen!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 form" id="formulario-contacto" style="text-align: center;">
+                <h3 id="heading">Formulario de Contacto</h3>
+                <!-- Formulario de contacto -->
+                <form action="#" method="post" id="miFormulario">
+                    <div class="form-group field">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control input-field" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group field">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" class="form-control input-field" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group field">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control input-field" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="button1" onclick="mostrarAlerta()">Enviar Mensaje</button>
+                    </div>
+                </form>
+            
+                <h3 id="heading">¿Prefieres WhatsApp?</h3>
+                <p style="color: white;">Puedes contactarnos a través de <a href="https://wa.me/+15973954285" target="_blank"><img src="img/Whatsapp.ico" style="width: 50px ;height: 50px;"></a></p>
+            
+                <!-- Script para mostrar alerta y limpiar formulario -->
+                <script>
+                    function mostrarAlerta() {
+                        alert("¡Gracias por su comentario! Tomaremos en cuenta su opinión.");
+                        
+                        // Limpiar campos del formulario después de mostrar la alerta
+                        document.getElementById("miFormulario").reset();
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página con enlaces a redes sociales y derechos de autor -->
+    <footer>    
+        <div>
+            <header  style="background: url(img/inicio.png);
+            background-size: cover;
+            background-position:center;
+            height: 200px;
+        ">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="LOGOWHITE.png" alt="Logo de Mi Página Web">
+                    </div>
+                    <!-- Navegación a redes sociales y derechos de autor -->
+                    <nav class="nave">
+                        <ul style="list-style: none;">
+                            <li><a href="https://www.telegram.com/"><img src="img/telegram.ico" alt=""> </a></li>
+                            <li><a href="http://www.instagram.com"><img src="img/instagram.ico" alt=""></a></li>
+                            <li><a href="https://es-la.facebook.com/"><img src="img/facebook.ico" alt=""></a></li>
+                            <p style="color: white;">Copy Right@ ¡Phone.com Store 2023</p>
+                        </ul>
+                    </nav>
+                    <!-- Navegación para volver al inicio de la página -->
+                    <nav class="nave">
+                        <ul>
+                            <li><a class="mt-3 text-center" href="#" data-toggle="modal" data-target="#recuperarContrasenaModal">volver al inicio de pagina</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header> 
+        </div>
+    </footer>
+</body>
+</html>
